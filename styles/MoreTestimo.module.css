@@ -1,0 +1,56 @@
+.Content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.ContentQuota{
+    box-sizing: border-box;
+    display: block;
+    width: 100vw;
+    height:100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    z-index: 10;
+}
+.ContentQuota::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b8aa91;
+}
+.quoteBody{
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+    height: 80%;
+    position: relative;
+    border-radius: 20px;
+    z-index: 11;
+    overflow-y: scroll;
+    background-color: #fff3de;
+}
+.contentCloseModal{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.contentContentComillas{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.quoteBody p{
+    margin: 20px 0;
+    font-size: 14px;
+    line-height:1.8;
+    font-weight: 500;
+    color: #38342c;
+
+}

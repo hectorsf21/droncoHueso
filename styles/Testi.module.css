@@ -1,0 +1,160 @@
+.contentTesti{
+    padding-top:50px;
+    display: flex;
+}
+.infoRow{
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.subtitle{ 
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    padding-left: 80px;
+    color: #b8aa91;
+    text-transform: uppercase;
+    position: relative;
+    margin: 5px 0;
+}
+.subtitle::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    top: 50%;
+    left: 30px;
+    background:#b8aa91;
+}
+.mainTitle{
+    padding-left: 80px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #b22837;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.rightContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rightContent p {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 500;
+    color: #38342c;
+}
+.quotesRow{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;    
+}
+/* desk */
+.quote{
+    padding: 20px 40px;
+    width:400px;
+    flex-shrink: 0;
+    margin: 0;
+}
+.quote p {
+    min-height: 130px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.quote a{
+    color: #7d1a24;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.quote h4{
+    color: #38342c;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.testimoNav{
+    margin: 40px 0;
+}
+.testimoNav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0 10px;
+}
+
+.lineOf{
+    width: 40px;
+    height: 4px;
+    cursor: pointer;
+    background: #ebdbc0;
+}
+.lineOn{
+    width: 40px;
+    height: 4px;
+    cursor: pointer;
+    background:#FF5A00 
+}
+/* DINAMICA */
+.dinamic{
+    display: flex;
+}
+
+@media (max-width:1220px){
+    .quotesRow{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 50px;
+        align-items: center;
+        overflow:visible;
+    }
+    .dinamic{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0!important;
+    }
+    .testimoNav{
+        display: none;
+    }
+   
+}
+@media (max-width:588px){
+    .infoRow{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .infoRow p{
+        max-width: 464px;
+        margin-top: 25px;
+    }
+    .mainTitle{
+        padding-left: 0;
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    .subtitle{
+        padding-left:50px;
+    }
+    .subtitle::after{
+        left: 0;
+    }
+    .quote{
+        width: auto;
+    }
+    .quote p{
+        max-width: 460px!important;
+    }
+}

@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+.bg-contact{
+  background-image: url(../image/bg-contact2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.navDinamic li{
+  cursor: pointer;
+  position: relative;
+}
+
+.navDinamic li:hover{
+  color:#e64d09;
+}
+
+.navDinamic li::after{
+  content: '';
+  position: absolute;
+  width:0;
+  display: block;
+  left: 0;
+  height: 2px;
+  bottom: 0;
+  transition: width .2s linear;
+  background:#e64d09;
+}
+
+
+
+
+.navDinamic li:hover::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    display: block;
+    left: 0;
+    height: 2px;
+    bottom: 0;
+    transition: width .2s linear;
+    background:#e64d09;
+}
+.form input{
+  @apply bg-none border-b-2 outline-none mb-10 mt-1
+}
+.form label{
+  @apply text-gray-700
+}
+.form textarea{
+  @apply my-10 outline-none bg-none border h-28 border-gray-400
+}
+
